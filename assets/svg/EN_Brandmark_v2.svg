@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 320" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.05" stop-color="#cc3333"/>
+      <stop offset="0.20" stop-color="#ef6d22"/>
+      <stop offset="0.35" stop-color="#ffaa00"/>
+      <stop offset="0.50" stop-color="#009933"/>
+      <stop offset="0.65" stop-color="#009999"/>
+      <stop offset="0.80" stop-color="#0052b3"/>
+      <stop offset="0.95" stop-color="#663399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Silhouette: tall central flame tip with one small side flick each side,
+       swooping shoulders into widest point, then straight crystal facets
+       to a single point at bottom. Faceted break midway down crystal for
+       gem character. -->
+  <path d="
+    M 100 6
+    C 108 32 122 52 134 70
+    C 144 60 158 60 158 76
+    C 158 90 150 100 156 116
+    C 164 134 168 150 174 162
+    L 134 244
+    L 100 314
+    L 66 244
+    L 26 162
+    C 32 150 36 134 44 116
+    C 50 100 42 90 42 76
+    C 42 60 56 60 66 70
+    C 78 52 92 32 100 6
+    Z"
+    fill="url(#spectrum)"
+    stroke="#b3b3b3"
+    stroke-width="1.5"
+    stroke-linejoin="round"/>
+</svg>

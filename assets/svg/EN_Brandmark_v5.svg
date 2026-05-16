@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 200" preserveAspectRatio="xMidYMid meet">
+  <!-- Two bibs from the system, same hue, sharing the matchup pair colour rule.
+       Left = Fire Team (filled red), Right = Ice Team (outlined red). They
+       overlap, so the mark reads as "two opposing players, one matchup". -->
+
+  <!-- Fire bib, rotated slightly, filled #c33 with grey outer frame -->
+  <g transform="translate(20, 30) rotate(-8 60 60)">
+    <rect x="0" y="0" width="120" height="120" rx="22" ry="22"
+          fill="#cc3333" stroke="#b3b3b3" stroke-width="3"/>
+    <text x="60" y="60" text-anchor="middle" dominant-baseline="central"
+          font-family="Inter, sans-serif" font-weight="900" font-size="52"
+          fill="#ffffff">GS</text>
+  </g>
+
+  <!-- Ice bib, rotated opposite, white interior with thick #c33 stroke -->
+  <g transform="translate(100, 30) rotate(8 60 60)">
+    <rect x="0" y="0" width="120" height="120" rx="22" ry="22"
+          fill="#ffffff" stroke="#cc3333" stroke-width="8"/>
+    <text x="60" y="60" text-anchor="middle" dominant-baseline="central"
+          font-family="Inter, sans-serif" font-weight="900" font-size="52"
+          fill="#cc3333">GK</text>
+  </g>
+</svg>

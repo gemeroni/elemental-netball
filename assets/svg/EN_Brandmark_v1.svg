@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 320" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.05" stop-color="#cc3333"/>
+      <stop offset="0.20" stop-color="#ef6d22"/>
+      <stop offset="0.35" stop-color="#ffaa00"/>
+      <stop offset="0.50" stop-color="#009933"/>
+      <stop offset="0.65" stop-color="#009999"/>
+      <stop offset="0.80" stop-color="#0052b3"/>
+      <stop offset="0.95" stop-color="#663399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Single silhouette: flame top resolves into crystal point at bottom.
+       Top half is rounded with subtle side tongues; bottom half is straight
+       diagonals to a single point. -->
+  <path d="
+    M 100 10
+    C 108 24 116 32 122 44
+    C 128 34 144 30 152 44
+    C 156 56 150 66 154 78
+    C 162 98 160 122 172 148
+    L 172 158
+    L 100 312
+    L 28 158
+    L 28 148
+    C 40 122 38 98 46 78
+    C 50 66 44 56 48 44
+    C 56 30 72 34 78 44
+    C 84 32 92 24 100 10
+    Z"
+    fill="url(#spectrum)"
+    stroke="#b3b3b3"
+    stroke-width="1.5"
+    stroke-linejoin="round"/>
+</svg>

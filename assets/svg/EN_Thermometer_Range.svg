@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 263.94 685.26" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#New_Gradient_Swatch_1);
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="263.94" height="685.26" fill="none"/>
+    </clipPath>
+    <linearGradient id="New_Gradient_Swatch_1" data-name="New Gradient Swatch 1" x1="124.46" y1="621.1" x2="124.46" y2="87.8" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#639"/>
+      <stop offset=".2" stop-color="#0052b3"/>
+      <stop offset=".35" stop-color="#099"/>
+      <stop offset=".5" stop-color="#093"/>
+      <stop offset=".65" stop-color="#fa0"/>
+      <stop offset=".8" stop-color="#ef6d22"/>
+      <stop offset=".95" stop-color="#c33"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-3">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g class="cls-4">
+          <g class="cls-5" clip-path="url(#clippath)">
+            <g>
+              <path d="M234.72,105.56v-18.92h-44.82c-.58-17.11-7.5-33.13-19.67-45.3-12.72-12.72-29.64-19.73-47.63-19.73s-34.9,7.01-47.63,19.73c-12.72,12.72-19.73,29.64-19.73,47.63v414.04c-16.6,17.59-26.02,41.1-26.02,65.39,0,52.51,42.72,95.23,95.23,95.23s95.23-42.72,95.23-95.23c0-26.31-10.76-51.16-29.74-69.12v-17.1h44.76v-18.92h-44.76v-43.85h32.94v-18.92h-32.94v-43.85h32.94v-18.92h-32.94v-43.85h44.76v-18.92h-44.76v-43.85h32.94v-18.92h-32.94v-43.85h32.94v-18.92h-32.94v-43.85h44.76ZM196.05,568.4c0,39.51-32.08,71.59-71.59,71.59s-71.59-32.08-71.59-71.59c0-20.63,8.75-39.25,22.74-52.31,2.09-1.95,3.28-4.69,3.28-7.55V88.97c0-11.59,4.61-22.71,12.8-30.91,8.2-8.2,19.31-12.8,30.91-12.8h0c11.59,0,22.71,4.6,30.91,12.8,8.2,8.2,12.8,19.31,12.8,30.91v416.3h0c0,3.08,1.37,6,3.75,7.96,15.87,13.13,25.99,32.98,25.99,55.17Z"/>
+              <path class="cls-1" d="M145.74,87.8v435.91c17.54,8.07,29.74,25.81,29.74,46.37,0,28.15-22.86,51.01-51.01,51.01s-51.01-22.86-51.01-51.01c0-19.07,10.49-35.72,26.02-44.47V87.8h46.27Z" fill="url(#New_Gradient_Swatch_1)" fill-rule="evenodd"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

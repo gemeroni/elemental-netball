@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 2" viewBox="0 0 425.2 779.53" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#outer-glow-1);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <filter id="outer-glow-1" x="26.33" y="26.21" width="372.48" height="726.96" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="2.83"/>
+      <feFlood flood-color="#fff" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="212.6" y1="744.59" x2="212.6" y2="34.93" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#663795"/>
+      <stop offset=".2" stop-color="#2f67b2"/>
+      <stop offset=".35" stop-color="#01999a"/>
+      <stop offset=".5" stop-color="#079a48"/>
+      <stop offset=".65" stop-color="#f8993a"/>
+      <stop offset=".8" stop-color="#f2673a"/>
+      <stop offset=".95" stop-color="#cc3533"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-1" width="425.2" height="779.53" fill="#fff"/>
+      <g class="cls-2" filter="url(#outer-glow-1)">
+        <path class="cls-3" d="M212.6,374.76c-8.24,0-14.94,6.73-14.94,15.01s6.7,15.01,14.94,15.01,14.94-6.73,14.94-15.01-6.7-15.01-14.94-15.01ZM223.11,389.76c0,5.82-4.71,10.56-10.51,10.56s-10.51-4.74-10.51-10.56,4.71-10.56,10.51-10.56,10.51,4.74,10.51,10.56ZM34.93,34.93v709.66h355.33V34.93H34.93ZM212.6,51.19c-2.62,0-4.76-2.14-4.76-4.78s2.13-4.78,4.76-4.78,4.76,2.14,4.76,4.78-2.13,4.78-4.76,4.78ZM203.41,46.4c0,5.09,4.12,9.23,9.18,9.23s9.18-4.14,9.18-9.23c0-2.71-1.22-5.28-3.26-7.02h104.57c-1.35,59.9-50.81,108.54-110.5,108.54s-109.15-48.64-110.5-108.54h104.57c-2.04,1.74-3.25,4.32-3.25,7.02ZM39.36,268.15V39.38h58.31c.65,30.11,12.78,58.37,34.18,79.62,21.68,21.52,50.35,33.37,80.74,33.37s59.06-11.85,80.74-33.37c21.41-21.25,33.54-49.51,34.18-79.62h58.31v228.78H39.36ZM39.36,506.92v-234.32h346.47v234.32H39.36ZM212.6,728.34c2.62,0,4.76,2.14,4.76,4.78s-2.13,4.78-4.76,4.78-4.76-2.15-4.76-4.78,2.13-4.78,4.76-4.78ZM221.78,733.12c0-5.09-4.12-9.23-9.18-9.23s-9.18,4.14-9.18,9.23c0,2.71,1.22,5.28,3.25,7.03h-104.57c1.35-59.9,50.81-108.54,110.5-108.54s109.15,48.64,110.5,108.54h-104.57c2.04-1.74,3.26-4.32,3.26-7.03ZM39.36,740.15v-228.78h346.47v228.78h-58.31c-.65-30.11-12.78-58.37-34.18-79.62-21.68-21.52-50.35-33.37-80.74-33.37s-59.06,11.85-80.74,33.37c-21.41,21.25-33.54,49.51-34.18,79.62h-58.31Z" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 320" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.05" stop-color="#cc3333"/>
+      <stop offset="0.20" stop-color="#ef6d22"/>
+      <stop offset="0.35" stop-color="#ffaa00"/>
+      <stop offset="0.50" stop-color="#009933"/>
+      <stop offset="0.65" stop-color="#009999"/>
+      <stop offset="0.80" stop-color="#0052b3"/>
+      <stop offset="0.95" stop-color="#663399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Single asymmetric leaf: flame-soft curved top, crystal-sharp angled bottom.
+       No separate flame tips. The form does both jobs in one curve. -->
+  <path d="
+    M 100 8
+    C 130 28 162 80 174 160
+    L 100 312
+    L 26 160
+    C 38 80 70 28 100 8
+    Z"
+    fill="url(#spectrum)"
+    stroke="#b3b3b3"
+    stroke-width="1.5"
+    stroke-linejoin="round"/>
+</svg>

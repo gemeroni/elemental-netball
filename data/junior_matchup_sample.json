@@ -1,0 +1,81 @@
+{
+  "title": "Junior Matchup - Round 5",
+  "home_team": "Sharks",
+  "away_team": "Comets",
+  "competition": "Saturday Juniors - U8s",
+  "match_date": "10 May 2026",
+  "round": "5",
+  "accent": "blue",
+  "matchups": [
+    {
+      "position_full": "Goal Shooter",
+      "home_player": "Mia",
+      "home_position": "GS",
+      "away_player": "Ava",
+      "away_position": "GK",
+      "matchup_hex": "#c33",
+      "home_badge_path": "assets/svg/Red_GS_Fire.svg",
+      "away_badge_path": "assets/svg/Red_GK_Ice.svg"
+    },
+    {
+      "position_full": "Goal Attack",
+      "home_player": "Ruby",
+      "home_position": "GA",
+      "away_player": "Zoe",
+      "away_position": "GD",
+      "matchup_hex": "#ef6d22",
+      "home_badge_path": "assets/svg/Orange_GA_Fire.svg",
+      "away_badge_path": "assets/svg/Orange_GD_Ice.svg"
+    },
+    {
+      "position_full": "Wing Attack",
+      "home_player": "Lily",
+      "home_position": "WA",
+      "away_player": "Ella",
+      "away_position": "WD",
+      "matchup_hex": "#fa0",
+      "home_badge_path": "assets/svg/Yellow_WA_Fire.svg",
+      "away_badge_path": "assets/svg/Yellow_WD_Ice.svg"
+    },
+    {
+      "position_full": "Centre",
+      "home_player": "Hana",
+      "home_position": "C",
+      "away_player": "Indi",
+      "away_position": "C",
+      "matchup_hex": "#093",
+      "home_badge_path": "assets/svg/Green_C_Fire.svg",
+      "away_badge_path": "assets/svg/Green_C_Ice.svg"
+    },
+    {
+      "position_full": "Wing Defence",
+      "home_player": "Sofia",
+      "home_position": "WD",
+      "away_player": "Pip",
+      "away_position": "WA",
+      "matchup_hex": "#099",
+      "home_badge_path": "assets/svg/Teal_WD_Fire.svg",
+      "away_badge_path": "assets/svg/Teal_WA_Ice.svg"
+    },
+    {
+      "position_full": "Goal Defence",
+      "home_player": "Tess",
+      "home_position": "GD",
+      "away_player": "Maya",
+      "away_position": "GA",
+      "matchup_hex": "#0052b3",
+      "home_badge_path": "assets/svg/Blue_GD_Fire.svg",
+      "away_badge_path": "assets/svg/Blue_GA_Ice.svg"
+    },
+    {
+      "position_full": "Goal Keeper",
+      "home_player": "Edie",
+      "home_position": "GK",
+      "away_player": "Nia",
+      "away_position": "GS",
+      "matchup_hex": "#639",
+      "home_badge_path": "assets/svg/Purple_GK_Fire.svg",
+      "away_badge_path": "assets/svg/Purple_GS_Ice.svg"
+    }
+  ]
+}

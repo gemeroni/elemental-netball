@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title | default('Elemental Netball') }}</title>
+  <link rel="stylesheet" href="{{ css_path }}">
+</head>
+<body>
+  <div class="page {% if accent %}accent-{{ accent }}{% endif %}">
+
+    <header class="header">
+      <div class="header__brand">Elemental<span>Netball</span></div>
+      <div class="header__meta">
+        {% block header_meta %}
+        {% if match_date %}<strong>{{ match_date }}</strong><br>{% endif %}
+        {% if competition %}{{ competition }}<br>{% endif %}
+        {% if round %}Round {{ round }}{% endif %}
+        {% endblock %}
+      </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+      <span>elemental-netball.com.au</span>
+      <span>{% if generated_at %}Generated {{ generated_at }}{% endif %}</span>
+    </footer>
+
+  </div>
+</body>
+</html>

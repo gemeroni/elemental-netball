@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{# Team sheet. Single-team lineup for a match — 7 starting positions plus
+   reserves, formatted for handing to umpires/scorers at game start.
+   Print-friendly: lined name fields, signature blocks at the foot. #}
+
+{% block header_meta %}
+  {% if match_date %}<strong>{{ match_date }}</strong><br>{% endif %}
+  {% if competition %}{{ competition }}<br>{% endif %}
+  {% if round %}Round {{ round }}{% if opponent %} &middot; vs {{ opponent }}{% endif %}{% endif %}
+{% endblock %}
+
+{% block content %}
+
+<div style="text-align:center; margin: 1mm 0 2mm;">
+  <div style="font-size:8pt; font-weight:600; color:var(--grey-mid); text-transform:uppercase; letter-spacing:.18em;">Team Sheet</div>
+  <h2 style="font-size:20pt; font-weight:900; letter-spacing:-.02em; line-height:1; margin-top:1mm;">
+    <span style="color:{{ team_hex | default('var(--blue)') }};">{{ team_name }}</span>{% if team_variant %} <span style="color:var(--grey-mid); font-size:11pt; font-weight:500;">{{ team_variant | upper }}</span>{% endif %}
+  </h2>
+</div>
+
+<div class="teamsheet-grid">
+{% for slot in lineup %}
+  <div class="teamsheet-row" style="--mc: {{ slot.position_hex }};">
+    <div class="teamsheet-row__bib">
+      <img src="{{ slot.badge_path }}" alt="{{ slot.position_code }}">
+    </div>
+    <div class="teamsheet-row__pos">
+      <div class="teamsheet-row__code">{{ slot.position_code }}</div>
+      <div class="teamsheet-row__name-label">{{ slot.position_full }}</div>
+    </div>
+    <div class="teamsheet-row__player">{{ slot.player | default('') }}</div>
+  </div>
+{% endfor %}
+</div>
+
+{% if reserves %}
+<div class="teamsheet-reserves">
+  <div class="teamsheet-reserves__label">Reserves</div>
+  <div class="teamsheet-reserves__list">
+    {% for r in reserves %}<span class="teamsheet-reserves__name">{{ r }}</span>{% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<div class="teamsheet-sign">
+  <div class="teamsheet-sign__cell">
+    <div class="teamsheet-sign__line"></div>
+    <div class="teamsheet-sign__label">Coach signature</div>
+  </div>
+  <div class="teamsheet-sign__cell">
+    <div class="teamsheet-sign__line"></div>
+    <div class="teamsheet-sign__label">Captain signature</div>
+  </div>
+  <div class="teamsheet-sign__cell">
+    <div class="teamsheet-sign__line"></div>
+    <div class="teamsheet-sign__label">Date</div>
+  </div>
+</div>
+
+{% endblock %}

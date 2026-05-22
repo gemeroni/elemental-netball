@@ -1,0 +1,25 @@
+{
+  "title": "Zone Analysis - Round 5",
+  "team": "Storm",
+  "player": "Sarah Mitchell",
+  "position": "GS",
+  "competition": "State League Division 1",
+  "match_date": "10 May 2026",
+  "round": "5",
+  "accent": "blue",
+  "court_heatmap_path": "assets/png/Zone_Heatmap.png",
+  "thermometer_path": "assets/png/Blue_Thermometer.png",
+  "zone_rows": [
+    { "zone": "Shooting Circle",  "touches": 38, "feeds": 12, "goals": 35, "pct": "92%" },
+    { "zone": "Goal Third",       "touches": 22, "feeds": 18, "goals": 5,  "pct": "23%" },
+    { "zone": "Centre Third",     "touches": 6,  "feeds": 4,  "goals": 0,  "pct": "0%" },
+    { "zone": "Defensive Third",  "touches": 1,  "feeds": 0,  "goals": 0,  "pct": "0%" }
+  ],
+  "performance_metrics": [
+    { "label": "Goal Conversion", "value": "82%", "pct": 82 },
+    { "label": "Shooting Accuracy", "value": "89%", "pct": 89 },
+    { "label": "Feed Reception", "value": "74%", "pct": 74 },
+    { "label": "Circle Presence", "value": "91%", "pct": 91 },
+    { "label": "Movement Rating", "value": "68%", "pct": 68 }
+  ]
+}

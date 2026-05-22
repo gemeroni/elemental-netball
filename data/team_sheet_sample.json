@@ -1,0 +1,63 @@
+{
+  "title": "Team Sheet - Sharks",
+  "team_name": "Sharks",
+  "team_variant": "Fire Team",
+  "team_hex": "#c33",
+  "opponent": "Comets",
+  "match_date": "10 May 2026",
+  "competition": "Saturday Juniors - U8s",
+  "round": "5",
+  "accent": "red",
+  "lineup": [
+    {
+      "position_full": "Goal Shooter",
+      "position_code": "GS",
+      "position_hex": "#c33",
+      "player": "Mia Thompson",
+      "badge_path": "assets/svg/Red_GS_Fire.svg"
+    },
+    {
+      "position_full": "Goal Attack",
+      "position_code": "GA",
+      "position_hex": "#ef6d22",
+      "player": "Ruby Patel",
+      "badge_path": "assets/svg/Orange_GA_Fire.svg"
+    },
+    {
+      "position_full": "Wing Attack",
+      "position_code": "WA",
+      "position_hex": "#fa0",
+      "player": "Lily Nguyen",
+      "badge_path": "assets/svg/Yellow_WA_Fire.svg"
+    },
+    {
+      "position_full": "Centre",
+      "position_code": "C",
+      "position_hex": "#093",
+      "player": "Hana Mokoena",
+      "badge_path": "assets/svg/Green_C_Fire.svg"
+    },
+    {
+      "position_full": "Wing Defence",
+      "position_code": "WD",
+      "position_hex": "#099",
+      "player": "Sofia Russo",
+      "badge_path": "assets/svg/Teal_WD_Fire.svg"
+    },
+    {
+      "position_full": "Goal Defence",
+      "position_code": "GD",
+      "position_hex": "#0052b3",
+      "player": "Tess O'Brien",
+      "badge_path": "assets/svg/Blue_GD_Fire.svg"
+    },
+    {
+      "position_full": "Goal Keeper",
+      "position_code": "GK",
+      "position_hex": "#639",
+      "player": "Edie Walker",
+      "badge_path": "assets/svg/Purple_GK_Fire.svg"
+    }
+  ],
+  "reserves": ["Ava Bennett", "Zoe Carter", "Pip Hassan"]
+}

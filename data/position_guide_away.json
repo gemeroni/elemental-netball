@@ -1,0 +1,74 @@
+{
+  "title": "Position Guide - Away",
+  "accent": "blue",
+  "mode_label": "AWAY GAMES",
+  "our_team_name": "Ice Team",
+  "opp_team_name": "Fire Team",
+  "team_hex": "#0052b3",
+  "opp_hex": "#c33",
+  "positions": [
+    {
+      "position_full": "Goal Shooter",
+      "position_code": "GS",
+      "role": "The Goal Shooter waits in the shooting circle, ready to score the moment they get the ball. The Goal Keeper stays right with them, jumping to block every shot.",
+      "opponent_code": "GK",
+      "matchup_hex": "#639",
+      "our_badge_path": "assets/svg/Purple_GS_Ice.svg",
+      "opp_badge_path": "assets/svg/Purple_GK_Fire.svg"
+    },
+    {
+      "position_full": "Goal Attack",
+      "position_code": "GA",
+      "role": "The Goal Attack helps move the ball into the shooting circle and shoots for goal too. The Goal Defence stays right behind them, putting their hands up to block shots.",
+      "opponent_code": "GD",
+      "matchup_hex": "#0052b3",
+      "our_badge_path": "assets/svg/Blue_GA_Ice.svg",
+      "opp_badge_path": "assets/svg/Blue_GD_Fire.svg"
+    },
+    {
+      "position_full": "Wing Attack",
+      "position_code": "WA",
+      "role": "The Wing Attack zips around the court to pass the ball into the shooting circle for the shooters. The Wing Defence chases them, jumping in front of every pass.",
+      "opponent_code": "WD",
+      "matchup_hex": "#099",
+      "our_badge_path": "assets/svg/Teal_WA_Ice.svg",
+      "opp_badge_path": "assets/svg/Teal_WD_Fire.svg"
+    },
+    {
+      "position_full": "Centre",
+      "position_code": "C",
+      "role": "Both teams' Centres are the busiest players on the court. They run from one end to the other, passing, defending, and helping wherever the ball goes.",
+      "opponent_code": "C",
+      "matchup_hex": "#093",
+      "our_badge_path": "assets/svg/Green_C_Ice.svg",
+      "opp_badge_path": "assets/svg/Green_C_Fire.svg"
+    },
+    {
+      "position_full": "Wing Defence",
+      "position_code": "WD",
+      "role": "The Wing Defence guards the middle of the court to stop the other Wing Attack from getting passes through. The Wing Attack dodges and weaves to get free.",
+      "opponent_code": "WA",
+      "matchup_hex": "#fa0",
+      "our_badge_path": "assets/svg/Yellow_WD_Ice.svg",
+      "opp_badge_path": "assets/svg/Yellow_WA_Fire.svg"
+    },
+    {
+      "position_full": "Goal Defence",
+      "position_code": "GD",
+      "role": "The Goal Defence sticks close to the Goal Attack, putting their hands up to block shots and grab loose balls. The Goal Attack twists and turns to get free.",
+      "opponent_code": "GA",
+      "matchup_hex": "#ef6d22",
+      "our_badge_path": "assets/svg/Orange_GD_Ice.svg",
+      "opp_badge_path": "assets/svg/Orange_GA_Fire.svg"
+    },
+    {
+      "position_full": "Goal Keeper",
+      "position_code": "GK",
+      "role": "The Goal Keeper stands tall under the goal post, jumping high to swat away shots. The Goal Shooter watches for an open moment to score.",
+      "opponent_code": "GS",
+      "matchup_hex": "#c33",
+      "our_badge_path": "assets/svg/Red_GK_Ice.svg",
+      "opp_badge_path": "assets/svg/Red_GS_Fire.svg"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{# Position guide. A standalone explainer of the elemental-netball system —
+   shows the 7 court positions, each one's role in plain language, and the
+   matched bibs that share a hue and play each other.
+
+   Drives two variants from the data:
+     - HOME GAMES (we are Fire): row order red → purple
+     - AWAY GAMES (we are Ice):  row order purple → red, bibs swapped #}
+
+{% block header_meta %}
+  <strong style="font-size:9pt; letter-spacing:.06em;">{{ mode_label }}</strong>
+  <span style="color:var(--grey-light); margin:0 1.5mm;">|</span>
+  <span style="font-size:8pt;">When we play as the <span style="color:{{ team_hex }}; font-weight:800;">{{ our_team_name | upper }}</span></span>
+{% endblock %}
+
+{% block content %}
+
+<div style="text-align:center; margin: 2mm 0 4mm;">
+  <h2 style="font-size:24pt; font-weight:900; letter-spacing:-.02em; line-height:1;">
+    <span style="color:{{ team_hex }};">{{ our_team_name }}</span>
+    <span style="color:var(--grey-mid); font-weight:400; font-size:18pt;">vs</span>
+    <span style="color:{{ opp_hex }};">{{ opp_team_name }}</span>
+  </h2>
+  <div style="font-size:8.5pt; font-weight:600; color:var(--grey-mid); text-transform:uppercase; letter-spacing:.18em; margin-top:2mm;">
+    How the seven positions match up
+  </div>
+</div>
+
+<div class="junior-grid">
+{% for pos in positions %}
+  <div class="junior-row" style="--mc: {{ pos.matchup_hex }};">
+
+    <div class="junior-row__bib">
+      <img src="{{ pos.our_badge_path }}" alt="{{ pos.position_code }} {{ our_team_name }}">
+    </div>
+
+    <div class="junior-row__center">
+      <div class="junior-row__pos-label">{{ pos.position_full }} ({{ pos.position_code }})</div>
+      <div class="guide-row__role">{{ pos.role }}</div>
+      <div class="junior-row__teams">{% if pos.opponent_code == pos.position_code %}each team has one{% else %}plays {{ pos.opponent_code }}{% endif %}</div>
+    </div>
+
+    <div class="junior-row__bib">
+      <img src="{{ pos.opp_badge_path }}" alt="{{ pos.opponent_code }} {{ opp_team_name }}">
+    </div>
+
+  </div>
+{% endfor %}
+</div>
+
+{% endblock %}

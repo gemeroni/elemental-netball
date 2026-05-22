@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 style="font-size:14pt; font-weight:900; margin-bottom:1mm;">
+  Zone Analysis &mdash; {{ team }}
+</h2>
+{% if player %}<div style="font-size:10pt; color:var(--grey-mid); margin-bottom:4mm;">{{ player }}{% if position %} &middot; {{ position }}{% endif %}</div>{% endif %}
+
+<!-- Zone heatmap + table -->
+<div class="zone-section">
+  <div class="zone-section__court">
+    <img src="{{ court_heatmap_path }}" alt="Zone heatmap">
+  </div>
+  <table class="zone-section__table">
+    <thead>
+      <tr>
+        <th>Zone</th>
+        <th>Touches</th>
+        <th>Feeds</th>
+        <th>Goals</th>
+        <th>%</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in zone_rows %}
+      <tr>
+        <td>{{ row.zone }}</td>
+        <td>{{ row.touches }}</td>
+        <td>{{ row.feeds }}</td>
+        <td>{{ row.goals }}</td>
+        <td>{{ row.pct }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- Performance thermometers -->
+<div style="margin-top:5mm;">
+  <div class="section-title">Performance Ratings</div>
+  {% for metric in performance_metrics %}
+  <div class="thermo-row" style="margin-bottom:2mm;">
+    <div class="thermo-row__label">{{ metric.label }}</div>
+    <div class="thermo-row__bar-wrap">
+      <div class="thermo-row__bar" style="width:{{ metric.pct }}%;"></div>
+    </div>
+    <div class="thermo-row__value">{{ metric.value }}</div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Thermometer asset (decorative) -->
+{% if thermometer_path %}
+<div style="position:absolute; right:var(--page-margin); top:40mm; width:12mm; opacity:.15;">
+  <img src="{{ thermometer_path }}" alt="" style="width:100%;">
+</div>
+{% endif %}
+
+{% endblock %}

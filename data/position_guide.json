@@ -1,0 +1,69 @@
+{
+  "title": "Position Guide",
+  "accent": "blue",
+  "positions": [
+    {
+      "position_full": "Goal Shooter",
+      "position_code": "GS",
+      "role": "Scores goals from inside the shooting circle.",
+      "opponent_code": "GK",
+      "matchup_hex": "#c33",
+      "fire_badge_path": "assets/svg/Red_GS_Fire.svg",
+      "ice_badge_path": "assets/svg/Red_GK_Ice.svg"
+    },
+    {
+      "position_full": "Goal Attack",
+      "position_code": "GA",
+      "role": "Feeds the shooter and helps score goals.",
+      "opponent_code": "GD",
+      "matchup_hex": "#ef6d22",
+      "fire_badge_path": "assets/svg/Orange_GA_Fire.svg",
+      "ice_badge_path": "assets/svg/Orange_GD_Ice.svg"
+    },
+    {
+      "position_full": "Wing Attack",
+      "position_code": "WA",
+      "role": "Sets up shots by feeding the ball into the circle.",
+      "opponent_code": "WD",
+      "matchup_hex": "#fa0",
+      "fire_badge_path": "assets/svg/Yellow_WA_Fire.svg",
+      "ice_badge_path": "assets/svg/Yellow_WD_Ice.svg"
+    },
+    {
+      "position_full": "Centre",
+      "position_code": "C",
+      "role": "Links attack and defence. Plays everywhere except the shooting circles.",
+      "opponent_code": "C",
+      "matchup_hex": "#093",
+      "fire_badge_path": "assets/svg/Green_C_Fire.svg",
+      "ice_badge_path": "assets/svg/Green_C_Ice.svg"
+    },
+    {
+      "position_full": "Wing Defence",
+      "position_code": "WD",
+      "role": "Stops the Wing Attack from feeding the ball in.",
+      "opponent_code": "WA",
+      "matchup_hex": "#099",
+      "fire_badge_path": "assets/svg/Teal_WD_Fire.svg",
+      "ice_badge_path": "assets/svg/Teal_WA_Ice.svg"
+    },
+    {
+      "position_full": "Goal Defence",
+      "position_code": "GD",
+      "role": "Marks the Goal Attack and blocks shots.",
+      "opponent_code": "GA",
+      "matchup_hex": "#0052b3",
+      "fire_badge_path": "assets/svg/Blue_GD_Fire.svg",
+      "ice_badge_path": "assets/svg/Blue_GA_Ice.svg"
+    },
+    {
+      "position_full": "Goal Keeper",
+      "position_code": "GK",
+      "role": "Defends the goal post and intercepts shots.",
+      "opponent_code": "GS",
+      "matchup_hex": "#639",
+      "fire_badge_path": "assets/svg/Purple_GK_Fire.svg",
+      "ice_badge_path": "assets/svg/Purple_GS_Ice.svg"
+    }
+  ]
+}

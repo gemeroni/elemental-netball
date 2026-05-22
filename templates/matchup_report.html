@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 style="font-size:14pt; font-weight:900; margin-bottom:1mm;">
+  {{ home_team }} <span style="color:var(--grey-mid); font-weight:400;">vs</span> {{ away_team }}
+</h2>
+
+{% for matchup in matchups %}
+<div style="margin-bottom:5mm;">
+  <div class="section-title">{{ matchup.position_full }}</div>
+  <div class="matchup-card">
+
+    <!-- Home player badge -->
+    <div class="matchup-card__badge">
+      <img src="{{ matchup.home_badge_path }}" alt="{{ matchup.home_position }}">
+    </div>
+
+    <div class="matchup-card__info matchup-card__info--{{ matchup.home_variant }}"
+         style="--mc: {{ matchup.matchup_hex }};">
+      <div class="matchup-card__name">{{ matchup.home_player }}</div>
+      <div class="matchup-card__pos">{{ matchup.home_position }} &mdash; {{ home_team }}</div>
+      <div class="stats-grid" style="grid-template-columns: repeat(3,1fr); margin-top:2mm;">
+        {% for stat in matchup.home_stats %}
+        <div class="stat-cell {% if stat.highlight %}stat-cell--highlight{% endif %}">
+          <div class="stat-cell__value">{{ stat.value }}</div>
+          <div class="stat-cell__label">{{ stat.label }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Court diagram -->
+    <div class="matchup-card__court" style="width:42mm; flex-shrink:0;">
+      <img src="{{ matchup.court_path }}" alt="Court matchup">
+    </div>
+
+    <div class="matchup-card__info matchup-card__info--{{ matchup.away_variant }}"
+         style="--mc: {{ matchup.matchup_hex }};">
+      <div class="matchup-card__name">{{ matchup.away_player }}</div>
+      <div class="matchup-card__pos">{{ matchup.away_position }} &mdash; {{ away_team }}</div>
+      <div class="stats-grid" style="grid-template-columns: repeat(3,1fr); margin-top:2mm;">
+        {% for stat in matchup.away_stats %}
+        <div class="stat-cell {% if stat.highlight %}stat-cell--highlight{% endif %}">
+          <div class="stat-cell__value">{{ stat.value }}</div>
+          <div class="stat-cell__label">{{ stat.label }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Away player badge -->
+    <div class="matchup-card__badge">
+      <img src="{{ matchup.away_badge_path }}" alt="{{ matchup.away_position }}">
+    </div>
+
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}

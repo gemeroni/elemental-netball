@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+:root {
+  --blue:   #0052b3;
+  --green:  #093;
+  --teal:   #099;
+  --orange: #ef6d22;
+  --red:    #c33;
+  --yellow: #fa0;
+  --purple: #639;
+  --white:  #fff;
+  --off-white: #f5f7fa;
+  --grey-light: #e8ecf0;
+  --grey-mid: #a0aab4;
+  --grey-dark: #2c3440;
+  --bib-outline: #b3b3b3;
+
+  --font: 'Inter', system-ui, sans-serif;
+  --page-margin: 18mm;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  color: var(--grey-dark);
+  background: var(--white);
+  font-size: 10pt;
+  line-height: 1.4;
+}
+
+/* ── Page shell ─────────────────────────────────────────────── */
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: var(--page-margin);
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+@media print {
+  body { background: var(--white); }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: var(--page-margin);
+  }
+  /* Only break between multiple .page elements, never after the last one. */
+  .page + .page { page-break-before: always; }
+  @page { margin: 0; size: A4; }
+}
+
+/* ── Header / footer ────────────────────────────────────────── */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2.5pt solid var(--blue);
+  padding-bottom: 4mm;
+}
+
+.header__brand {
+  font-size: 15pt;
+  font-weight: 900;
+  letter-spacing: -.02em;
+  color: var(--blue);
+}
+
+.header__brand span { color: var(--grey-dark); }
+
+.header__meta {
+  font-size: 8pt;
+  color: var(--grey-mid);
+  text-align: right;
+  line-height: 1.5;
+}
+
+.footer {
+  margin-top: auto;
+  border-top: 1pt solid var(--grey-light);
+  padding-top: 3mm;
+  font-size: 7.5pt;
+  color: var(--grey-mid);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ── Section titles ─────────────────────────────────────────── */
+
+.section-title {
+  font-size: 8pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--grey-mid);
+  margin-bottom: 2mm;
+}
+
+/* ── Matchup card ───────────────────────────────────────────── */
+
+.matchup-card {
+  display: flex;
+  align-items: center;
+  gap: 6mm;
+  background: var(--off-white);
+  border-radius: 6pt;
+  padding: 5mm 6mm;
+  overflow: hidden;
+  position: relative;
+}
+
+.matchup-card__badge {
+  width: 22mm;
+  height: 22mm;
+  flex-shrink: 0;
+}
+
+.matchup-card__badge img { width: 100%; height: 100%; }
+
+.matchup-card__court {
+  flex: 1;
+}
+
+.matchup-card__court img { width: 100%; }
+
+.matchup-card__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+  padding: 2mm 3mm;
+  border-radius: 4pt;
+}
+
+/* Fire panel: warm tint flows left-to-right toward court */
+.matchup-card__info--fire {
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--mc, #ef6d22) 12%, transparent) 0%,
+    transparent 75%
+  );
+}
+
+/* Ice panel: cool tint flows right-to-left toward court */
+.matchup-card__info--ice {
+  background: linear-gradient(
+    to left,
+    color-mix(in srgb, var(--mc, #0052b3) 8%, transparent) 0%,
+    transparent 75%
+  );
+}
+
+.matchup-card__name {
+  font-size: 12pt;
+  font-weight: 700;
+}
+
+.matchup-card__pos {
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--grey-mid);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+/* ── Stats grid ─────────────────────────────────────────────── */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3mm;
+}
+
+.stat-cell {
+  background: var(--off-white);
+  border-radius: 5pt;
+  padding: 3mm 4mm;
+  text-align: center;
+}
+
+.stat-cell__value {
+  font-size: 18pt;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--blue);
+}
+
+.stat-cell__label {
+  font-size: 7pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--grey-mid);
+  margin-top: 1mm;
+}
+
+.stat-cell--highlight .stat-cell__value { color: var(--orange); }
+
+/* ── Thermometer row ────────────────────────────────────────── */
+
+.thermo-row {
+  display: flex;
+  align-items: center;
+  gap: 4mm;
+}
+
+.thermo-row__label {
+  width: 32mm;
+  font-size: 8pt;
+  font-weight: 600;
+}
+
+.thermo-row__bar-wrap {
+  flex: 1;
+  height: 8pt;
+  background: var(--grey-light);
+  border-radius: 99pt;
+  overflow: hidden;
+}
+
+.thermo-row__bar {
+  height: 100%;
+  border-radius: 99pt;
+  background: linear-gradient(90deg, var(--blue) 0%, var(--teal) 40%, var(--yellow) 70%, var(--orange) 85%, var(--red) 100%);
+}
+
+.thermo-row__value {
+  width: 10mm;
+  text-align: right;
+  font-size: 9pt;
+  font-weight: 700;
+}
+
+/* ── Zone heatmap ───────────────────────────────────────────── */
+
+.zone-section {
+  display: flex;
+  gap: 6mm;
+  align-items: flex-start;
+}
+
+.zone-section__court {
+  width: 50mm;
+  flex-shrink: 0;
+}
+
+.zone-section__court img { width: 100%; }
+
+.zone-section__table {
+  flex: 1;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+}
+
+.zone-section__table th {
+  font-size: 7pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--grey-mid);
+  text-align: left;
+  padding: 1.5mm 2mm;
+  border-bottom: 1pt solid var(--grey-light);
+}
+
+.zone-section__table td {
+  padding: 1.5mm 2mm;
+  border-bottom: .5pt solid var(--grey-light);
+}
+
+.zone-section__table td:not(:first-child) {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ── Two-column layout ──────────────────────────────────────── */
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5mm;
+}
+
+/* ── Colour accents by team ─────────────────────────────────── */
+
+.accent-blue   { --accent: var(--blue); }
+.accent-green  { --accent: var(--green); }
+.accent-teal   { --accent: var(--teal); }
+.accent-orange { --accent: var(--orange); }
+.accent-red    { --accent: var(--red); }
+.accent-yellow { --accent: var(--yellow); }
+.accent-purple { --accent: var(--purple); }
+
+.stat-cell--team .stat-cell__value { color: var(--accent, var(--blue)); }
+
+/* ── Junior matchup (no stats, big bibs) ────────────────────── */
+
+.junior-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+}
+
+.junior-row {
+  display: flex;
+  align-items: center;
+  gap: 5mm;
+  background: color-mix(in srgb, var(--mc, var(--blue)) 6%, transparent);
+  border-radius: 6pt;
+  padding: 2mm 4mm;
+}
+
+.junior-row__bib {
+  width: 22mm;
+  height: 22mm;
+  flex-shrink: 0;
+}
+
+.junior-row__bib img { width: 100%; height: 100%; }
+
+.junior-row__center {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5mm;
+}
+
+.junior-row__pos-label {
+  font-size: 7pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: color-mix(in srgb, var(--mc, var(--blue)) 70%, var(--grey-dark));
+}
+
+.junior-row__names {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 3mm;
+}
+
+.junior-row__name {
+  font-size: 15pt;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -.01em;
+}
+
+.junior-row__vs {
+  font-size: 9pt;
+  font-weight: 600;
+  color: var(--grey-mid);
+  text-transform: lowercase;
+}
+
+.junior-row__teams {
+  font-size: 6.5pt;
+  font-weight: 600;
+  color: var(--grey-mid);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.guide-row__role {
+  font-size: 8.5pt;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--grey-dark);
+  max-width: 110mm;
+  margin: 0 auto;
+}
+
+/* ── Team sheet ─────────────────────────────────────────────── */
+
+.teamsheet-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+}
+
+.teamsheet-row {
+  display: flex;
+  align-items: center;
+  gap: 5mm;
+  background: color-mix(in srgb, var(--mc, var(--blue)) 5%, transparent);
+  border-radius: 6pt;
+  padding: 2mm 4mm;
+}
+
+.teamsheet-row__bib {
+  width: 15mm;
+  height: 15mm;
+  flex-shrink: 0;
+}
+
+.teamsheet-row__bib img { width: 100%; height: 100%; }
+
+.teamsheet-row__pos {
+  width: 40mm;
+  flex-shrink: 0;
+}
+
+.teamsheet-row__code {
+  font-size: 14pt;
+  font-weight: 900;
+  line-height: 1;
+  color: color-mix(in srgb, var(--mc, var(--blue)) 75%, var(--grey-dark));
+}
+
+.teamsheet-row__name-label {
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--grey-mid);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-top: 0.5mm;
+}
+
+.teamsheet-row__player {
+  flex: 1;
+  font-size: 13pt;
+  font-weight: 700;
+  color: var(--grey-dark);
+  border-bottom: 1pt solid color-mix(in srgb, var(--mc, var(--grey-mid)) 35%, transparent);
+  padding-bottom: 1mm;
+  min-height: 7mm;
+}
+
+.teamsheet-reserves {
+  background: var(--off-white);
+  border-radius: 6pt;
+  padding: 2.5mm 5mm;
+}
+
+.teamsheet-reserves__label {
+  font-size: 8pt;
+  font-weight: 700;
+  color: var(--grey-mid);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 1.5mm;
+}
+
+.teamsheet-reserves__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3mm 6mm;
+  font-size: 11pt;
+  font-weight: 600;
+}
+
+.teamsheet-sign {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 6mm;
+}
+
+.teamsheet-sign__line {
+  border-bottom: 1pt solid var(--grey-mid);
+  height: 7mm;
+}
+
+.teamsheet-sign__label {
+  font-size: 7pt;
+  font-weight: 600;
+  color: var(--grey-mid);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-top: 1mm;
+}

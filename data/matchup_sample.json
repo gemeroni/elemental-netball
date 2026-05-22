@@ -1,0 +1,80 @@
+{
+  "title": "Matchup Report - Round 5",
+  "home_team": "Storm",
+  "away_team": "Lightning",
+  "competition": "State League Division 1",
+  "match_date": "10 May 2026",
+  "round": "5",
+  "accent": "blue",
+  "matchups": [
+    {
+      "position_full": "Goal Shooter vs Goal Keeper",
+      "home_player": "Sarah Mitchell",
+      "home_position": "GS",
+      "away_player": "Priya Nair",
+      "away_position": "GK",
+      "home_variant": "fire",
+      "away_variant": "ice",
+      "matchup_hex": "#c33",
+      "home_badge_path": "assets/png/Red_GS_Fire.png",
+      "away_badge_path": "assets/png/Purple_GK_Fire.png",
+      "court_path": "assets/png/Blue_Matchup.png",
+      "home_stats": [
+        { "label": "Goals", "value": "42", "highlight": true },
+        { "label": "Attempts", "value": "51", "highlight": false },
+        { "label": "Conv%", "value": "82%", "highlight": false }
+      ],
+      "away_stats": [
+        { "label": "Deflections", "value": "7", "highlight": true },
+        { "label": "Intercepts", "value": "3", "highlight": false },
+        { "label": "Gains", "value": "4", "highlight": false }
+      ]
+    },
+    {
+      "position_full": "Goal Attack vs Goal Defence",
+      "home_player": "Jade Kowalski",
+      "home_position": "GA",
+      "away_player": "Amara Diallo",
+      "away_position": "GD",
+      "home_variant": "fire",
+      "away_variant": "ice",
+      "matchup_hex": "#ef6d22",
+      "home_badge_path": "assets/png/Orange_GA_Fire.png",
+      "away_badge_path": "assets/png/Blue_GD_Fire.png",
+      "court_path": "assets/png/Blue_Matchup.png",
+      "home_stats": [
+        { "label": "Goals", "value": "18", "highlight": true },
+        { "label": "Assists", "value": "24", "highlight": false },
+        { "label": "Feeds", "value": "38", "highlight": false }
+      ],
+      "away_stats": [
+        { "label": "Deflections", "value": "11", "highlight": true },
+        { "label": "Intercepts", "value": "5", "highlight": false },
+        { "label": "Gains", "value": "6", "highlight": false }
+      ]
+    },
+    {
+      "position_full": "Wing Attack vs Wing Defence",
+      "home_player": "Chloe Tran",
+      "home_position": "WA",
+      "away_player": "Nina Okafor",
+      "away_position": "WD",
+      "home_variant": "fire",
+      "away_variant": "ice",
+      "matchup_hex": "#fa0",
+      "home_badge_path": "assets/png/Yellow_WA_Fire.png",
+      "away_badge_path": "assets/png/Teal_WD_Fire.png",
+      "court_path": "assets/png/Blue_Matchup.png",
+      "home_stats": [
+        { "label": "Feeds", "value": "47", "highlight": true },
+        { "label": "Goal Assists", "value": "19", "highlight": false },
+        { "label": "Turnovers", "value": "4", "highlight": false }
+      ],
+      "away_stats": [
+        { "label": "Deflections", "value": "9", "highlight": true },
+        { "label": "Intercepts", "value": "4", "highlight": false },
+        { "label": "Gains", "value": "7", "highlight": false }
+      ]
+    }
+  ]
+}

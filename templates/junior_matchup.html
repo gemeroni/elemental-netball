@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{# Junior matchup card. All 7 home-team positions on a single A4 page,
+   each paired with the opposing player. Big bibs, names only, no stats. #}
+
+{% block content %}
+
+<h2 style="font-size:13pt; font-weight:900; margin-bottom:1mm;">
+  {{ home_team }} <span style="color:var(--grey-mid); font-weight:400;">vs</span> {{ away_team }}
+</h2>
+
+<div class="junior-grid">
+{% for matchup in matchups %}
+  <div class="junior-row" style="--mc: {{ matchup.matchup_hex }};">
+
+    <div class="junior-row__bib">
+      <img src="{{ matchup.home_badge_path }}" alt="{{ matchup.home_position }}">
+    </div>
+
+    <div class="junior-row__center">
+      <div class="junior-row__pos-label">{{ matchup.position_full }}</div>
+      <div class="junior-row__names">
+        <span class="junior-row__name">{{ matchup.home_player }}</span>
+        <span class="junior-row__vs">vs</span>
+        <span class="junior-row__name">{{ matchup.away_player }}</span>
+      </div>
+      <div class="junior-row__teams">{{ home_team }} &middot; {{ away_team }}</div>
+    </div>
+
+    <div class="junior-row__bib">
+      <img src="{{ matchup.away_badge_path }}" alt="{{ matchup.away_position }}">
+    </div>
+
+  </div>
+{% endfor %}
+</div>
+
+{% endblock %}

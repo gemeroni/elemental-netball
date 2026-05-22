@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 317.88 1257.35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#New_Gradient_Swatch_copy);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-2" d="M106.94,98.5v910.89c-32.3,18.21-54.13,52.84-54.13,92.53,0,58.58,47.55,106.13,106.13,106.13s106.13-47.56,106.13-106.13c0-42.79-25.37-79.69-61.87-96.48V98.5h-96.27Z"/>
+    </clipPath>
+    <linearGradient id="New_Gradient_Swatch_copy" data-name="New Gradient Swatch copy" x1="-1623.23" y1="719.7" x2="-1618.31" y2="719.7" gradientTransform="translate(162469.1123 -364873.2838) rotate(-90) scale(225.5262 -225.5262)" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#83e"/>
+      <stop offset=".2" stop-color="#2060ff"/>
+      <stop offset=".35" stop-color="#00c8dc"/>
+      <stop offset=".5" stop-color="#00c853"/>
+      <stop offset=".65" stop-color="#ffd800"/>
+      <stop offset=".8" stop-color="#f60"/>
+      <stop offset=".95" stop-color="#f42040"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g class="cls-3">
+        <rect class="cls-1" x="52.81" y="98.5" width="212.26" height="1109.55"/>
+      </g>
+      <g>
+        <path d="M158.94,1257.35c-87.64,0-158.94-71.3-158.94-158.94,0-43.85,18.4-86.19,50.48-116.15,2.32-2.17,3.65-5.23,3.65-8.41V100.93c0-26.97,10.5-52.31,29.57-71.37C102.76,10.5,128.1,0,155.06,0s52.32,10.5,71.38,29.56c19.06,19.06,29.56,44.41,29.56,71.37v866.13c0,3.44,1.52,6.67,4.17,8.86,36.67,30.34,57.7,74.99,57.7,122.49,0,87.64-71.3,158.94-158.94,158.94ZM155.07,20c-21.62,0-41.95,8.42-57.23,23.7-15.29,15.28-23.71,35.61-23.71,57.23v872.92c0,8.69-3.64,17.08-10,23.02-28.05,26.2-44.14,63.2-44.14,101.53,0,76.61,62.33,138.94,138.94,138.94s138.94-62.33,138.94-138.94c0-41.53-18.39-80.56-50.45-107.08-7.26-6-11.42-14.85-11.42-24.27V100.93c0-21.62-8.42-41.94-23.71-57.23-15.28-15.28-35.61-23.7-57.23-23.7Z"/>
+        <rect x="249.49" y="98.5" width="50.07" height="18.6"/>
+        <rect x="236.49" y="234.66" width="50.07" height="18.6"/>
+        <rect x="236.49" y="370.82" width="50.07" height="18.6"/>
+        <rect x="249.49" y="506.98" width="50.07" height="18.6"/>
+        <rect x="236.49" y="643.14" width="50.07" height="18.6"/>
+        <rect x="236.49" y="779.29" width="50.07" height="18.6"/>
+        <rect x="249.49" y="915.45" width="50.07" height="18.6"/>
+      </g>
+    </g>
+  </g>
+</svg>
